@@ -9,7 +9,7 @@
 
 * Mudar branch padrao para develop
 * Proteger main
-* [Posso adicionar um template de teste](./.github/PULL_REQUEST_TEMPLATE.md)
+* [Posso adicionar um template de Pull Request](./.github/PULL_REQUEST_TEMPLATE.md)
 
 
 ## Code Review
