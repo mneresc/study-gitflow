@@ -10,7 +10,7 @@
 * Mudar branch padrao para develop
 * Proteger main
 * [Posso adicionar um template de Pull Request](./.github/PULL_REQUEST_TEMPLATE.md)
-* Code Owner: Pode colocar quem e responsavel por determinado arquivo
+* [Code Owner: Pode colocar quem e responsavel por determinado formato de arquivo, podendo ser pessoas ou grupos](./.github/codeowners)
 
 
 ## Code Review
