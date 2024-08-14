@@ -9,7 +9,8 @@
 
 * Mudar branch padrao para develop
 * Proteger main
-* [Posso adicionar um template de teste](./.github/PULL_REQUEST_TEMPLATE.md)
+* [Posso adicionar um template de Pull Request](./.github/PULL_REQUEST_TEMPLATE.md)
+* Code Owner: Pode colocar quem e responsavel por determinado arquivo
 
 
 ## Code Review
@@ -18,4 +19,4 @@ Plugin do VSCode
 
 
 
-git remote add "origin" git@github.com:mneresc/study-gitflow.git
+[PAREI] 5. SemVer e Conventional Commits - Aula 1
