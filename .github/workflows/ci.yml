@@ -8,8 +8,6 @@ jobs:
             - uses: actions/setup-go@v2
               with:
                 go-version: '1.19'
-            - name: Run tests and code
-                - steps:
-                    - run: cd src
-                    - run: go test #run quando quero usar comando
-                    - run: go run math.go #run quando quero usar comando
+            - run: cd src
+            - run: go test #run quando quero usar comando
+            - run: go run math.go #run quando quero usar comando
