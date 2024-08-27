@@ -11,13 +11,38 @@
 * Proteger main
 * [Posso adicionar um template de Pull Request](./.github/PULL_REQUEST_TEMPLATE.md)
 * [Code Owner: Pode colocar quem e responsavel por determinado formato de arquivo, podendo ser pessoas ou grupos](./.github/codeowners)
-* Commitlint: 
+* Commitlint + Husky [link](https://commitlint.js.org/guides/local-setup.html) [instalacao](https://dev.to/vitordevsp/padronizacao-de-commit-com-commitlint-husky-e-commitizen-3g1n)
+* 
 
+```bash
+
+yarn add @commitlint/config-conventional @commitlint/cli -D
+
+```
+* commisar - Validacao de complience de commit
+* commitzen - linha de comando para ajudar a commitar
 
 ## Code Review
 
 Plugin do VSCode
 
+## CI
 
+* Script
+    * Teste
+    * Linter
+    * Verificacao de qualidade
+    * Verificacao de seguranca
+    * Geracao de artefatos para deploy
+    * Identificacao da proxima versao gerada
+    * Geracao de tags e releases
+
+* Workflow
+    * Event: on:push
+    * Filter: branches: - master
+    * Envoriment: runs-on:ubuntu
+    * Actions: steps: 
+            -action/run-build # actions  
+            - npm run test    # comando
 
 [PAREI] 5. SemVer e Conventional Commits - Aula 1
