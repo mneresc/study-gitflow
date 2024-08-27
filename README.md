@@ -45,4 +45,4 @@ Plugin do VSCode
             -action/run-build # actions  
             - npm run test    # comando
 
-[PAREI] 5. SemVer e Conventional Commits - Aula 1
+[PAREI] 4. Integração contínua-20240320T194553Z-001- 2.Aula 3
