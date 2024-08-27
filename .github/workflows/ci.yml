@@ -9,4 +9,4 @@ jobs:
               with:
                 go-version: '1.19'
             - name: Run tests
-              run: go test #run quando quero usar comando
+              run: cd src && go test #run quando quero usar comando
