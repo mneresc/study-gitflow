@@ -8,5 +8,5 @@ jobs:
             - uses: actions/setup-go@v2
               with:
                 go-version: '1.19'
-            - run: cd src & go test #run quando quero usar comando
-            - run: cd src & go run math.go #run quando quero usar comando
+            - run: cd src && go test #run quando quero usar comando
+            - run: cd src && go run math.go #run quando quero usar comando
