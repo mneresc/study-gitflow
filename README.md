@@ -44,5 +44,9 @@ Plugin do VSCode
     * Actions: steps: 
             -action/run-build # actions  
             - npm run test    # comando
+* Active status check 
+    * https://github.com/mneresc/study-gitflow/settings/rules/new?target=branch
+    * Require status checks to pass
+
 
 [PAREI] 4. Integração contínua-20240320T194553Z-001- 2.Aula 3
