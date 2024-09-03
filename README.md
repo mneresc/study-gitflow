@@ -47,6 +47,14 @@ Plugin do VSCode
 * Active status check 
     * https://github.com/mneresc/study-gitflow/settings/rules/new?target=branch
     * Require status checks to pass
+    * Adjust ci to use PR trigger
+
+    ```yml
+    on: 
+    pull_request:
+        branches:
+        - develop
+    ```
 
 
-[PAREI] 4. Integração contínua-20240320T194553Z-001- 2.Aula 3
+[PAREI] 4. Integração contínua-20240320T194553Z-002 - 5. CI com Docker - aula 
