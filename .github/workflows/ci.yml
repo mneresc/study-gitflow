@@ -20,6 +20,7 @@ jobs:
               uses: sonarsource/sonarcloud-github-action@v3 # Ex: v2.1.0, See the latest version at https://github.com/marketplace/actions/sonarcloud-scan
               env:
                 SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+                SONARCLOUD_BRANCH: ${{ github.ref }}
             -
               name: Set up QEMU
               uses: docker/setup-qemu-action@v3
