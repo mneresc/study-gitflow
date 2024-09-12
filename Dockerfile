@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN go mod init teste
 
-COPY . .
+COPY ./src .
 
 RUN go build -o math
 

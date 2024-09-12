@@ -56,5 +56,7 @@ Plugin do VSCode
         - develop
     ```
 
+* [Action to build docker container](https://github.com/marketplace/actions/build-and-push-docker-images)
+
 
 [PAREI] 4. Integração contínua-20240320T194553Z-002 - 5. CI com Docker - aula 
