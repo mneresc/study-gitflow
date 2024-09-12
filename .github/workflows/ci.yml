@@ -20,13 +20,13 @@ jobs:
               shell: bash
               run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
               id: extract_branch
-            - 
-              name: SonarCloud Scan
-              uses: sonarsource/sonarcloud-github-action@v3 # Ex: v2.1.0, See the latest version at https://github.com/marketplace/actions/sonarcloud-scan
-              env:
-                SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-                SONARCLOUD_BRANCH: ${{ steps.extract_branch.outputs.branch }}
-                SONAR_BRANCH_NAME: ${{ steps.extract_branch.outputs.branch }}
+            # - 
+            #   name: SonarCloud Scan
+            #   uses: sonarsource/sonarcloud-github-action@v3 # Ex: v2.1.0, See the latest version at https://github.com/marketplace/actions/sonarcloud-scan
+            #   env:
+            #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+            #     SONARCLOUD_BRANCH: ${{ steps.extract_branch.outputs.branch }}
+            #     SONAR_BRANCH_NAME: ${{ steps.extract_branch.outputs.branch }}
             -
               name: Set up QEMU
               uses: docker/setup-qemu-action@v3
