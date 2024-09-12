@@ -14,7 +14,7 @@ jobs:
             - uses: actions/setup-go@v2
               with:
                 go-version: ${{ matrix.go }}
-            - run: cd src && go test #run quando quero usar comando
+            - run: cd src && go test --coverprofile=coverage.out #run quando quero usar comando
             - run: cd src && go run math.go #run quando quero usar comando
             -
               name: Set up QEMU
