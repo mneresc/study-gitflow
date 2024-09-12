@@ -58,5 +58,27 @@ Plugin do VSCode
 
 * [Action to build docker container](https://github.com/marketplace/actions/build-and-push-docker-images)
 
+* Sonar
+    * Run sonar on docker: docker run --name sonarqube-custom -p 9000:9000 sonarqube:10.6-community
 
+    ´´´bash
+    sonar-scanner \
+    -Dsonar.projectKey=gotest \
+    -Dsonar.sources=. \
+    -Dsonar.host.url=http://localhost:9000 \
+    -Dsonar.token=sqp_f008795e4eb500ca65bb42855613bd39b878b29f
+
+    # or on sonar properties path
+
+    sonar-scanner 
+
+    # or
+
+    sonar-scanner -Dsonar.projectProperties=sonar-project.properties
+    ´´´
+    * Generate coverage with go
+    ´´´bash
+        go go test --coverprofile=coverage.out
+    ´´´
 [PAREI] 4. Integração contínua-20240320T194553Z-002 - 5. CI com Docker - aula 
+
