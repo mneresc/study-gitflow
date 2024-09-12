@@ -70,7 +70,11 @@ Plugin do VSCode
 
     # or on sonar properties path
 
-    sonar-scanner
+    sonar-scanner 
+
+    # or
+
+    sonar-scanner -Dsonar.projectProperties=sonar-project.properties
     ´´´
     * Generate coverage with go
     ´´´bash

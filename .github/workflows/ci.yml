@@ -15,7 +15,11 @@ jobs:
               with:
                 go-version: ${{ matrix.go }}
             - run: cd src && go test --coverprofile=coverage.out #run quando quero usar comando
-            - run: cd src && go run math.go #run quando quero usar comando
+            - 
+              name: SonarCloud Scan
+              uses: sonarsource/sonarcloud-github-action@v3 # Ex: v2.1.0, See the latest version at https://github.com/marketplace/actions/sonarcloud-scan
+              env:
+                SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
             -
               name: Set up QEMU
               uses: docker/setup-qemu-action@v3
