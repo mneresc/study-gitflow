@@ -68,9 +68,9 @@ Plugin do VSCode
     -Dsonar.host.url=http://localhost:9000 \
     -Dsonar.token=sqp_f008795e4eb500ca65bb42855613bd39b878b29f
 
-    # or
+    # or on sonar properties path
 
-    sonar-scanner # on sonar properties path
+    sonar-scanner
     ´´´
     * Generate coverage with go
     ´´´bash
